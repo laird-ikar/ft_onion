@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  ft_onion:
+    container_name: ft_onion
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "4242:4242"
